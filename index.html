@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grace Boak — Portfolio</title>
+    <meta name="description" content="Photography and video portfolio of Grace Boak." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="wrap">
+      <header>
+        <div class="brand">
+          <h1>Grace Boak</h1>
+          <div class="tag">Photography + Video · NYC</div>
+        </div>
+        <nav>
+          <a class="active" href="index.html">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <div class="topbar">
+        <div class="filters" role="group" aria-label="Filter work">
+          <button class="pill" data-filter="all" aria-pressed="true">All</button>
+          <button class="pill" data-filter="photo" aria-pressed="false">Photo</button>
+          <button class="pill" data-filter="video" aria-pressed="false">Video</button>
+        </div>
+        <div class="count" id="count"></div>
+      </div>
+
+      <main class="grid" id="grid" aria-label="Work grid"></main>
+
+      <section id="about" style="margin-top:64px; max-width:72ch;">
+        <h2 style="font-size:16px; margin:0 0 10px;">About</h2>
+        <p style="margin:0; color:rgba(17,17,17,.62); font-size:14px;">
+          I’m Grace Boak, a NYC-based video producer, photographer, and podcast host. I make documentary, event, and editorial work.
+        </p>
+      </section>
+
+      <section id="contact" style="margin-top:28px; max-width:72ch;">
+        <h2 style="font-size:16px; margin:0 0 10px;">Contact</h2>
+        <p style="margin:0; color:rgba(17,17,17,.62); font-size:14px;">
+          <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a> ·
+          <a href="#" target="_blank" rel="noopener">Instagram</a> ·
+          <a href="#" target="_blank" rel="noopener">Vimeo</a>
+        </p>
+        <p style="margin-top:18px; color:rgba(17,17,17,.55); font-size:12px;">
+          © <span id="y"></span> Grace Boak. All images and video are copyrighted.
+        </p>
+      </section>
+    </div>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="projects.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
