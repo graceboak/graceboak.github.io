@@ -4,7 +4,7 @@ This is my personal portfolio website.
 
 ## Live Site
 
-[View the website](https://graceboak.github.io)
+[View the website](https://www.graceboak.com)
 
 ## Built With
 
